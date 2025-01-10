@@ -42,7 +42,7 @@ const NavigationMenu = () => {
                     </ul>
                     <div className="mt-auto mb-48">
                         <div className="absolute left-6 right-6 h-[1px] bg-[#00FF85]" />
-                        <Link href={"/"} className={`${raleway.className} flex items-center justify-center pt-5 p-2 rounded-lg group`}>
+                        <Link href={"/"} className={`${raleway.className} flex items-center justify-center  p-2 hover:bg-[#F2F2F2] hover:text-[#01C2D2] mx-5 mt-3 rounded-lg group`}>
                             <div>
                                 <IoLogOutOutline className="text-2xl" />
                             </div>
