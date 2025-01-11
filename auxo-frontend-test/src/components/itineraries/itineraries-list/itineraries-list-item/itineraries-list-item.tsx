@@ -1,8 +1,14 @@
+"use client"
+
 import { Itinerary } from "@/types/itineraries";
+import { useRouter } from "next/navigation";
 
 const ItinerariesListItem = ( { id,price,agent,agent_rating } : Itinerary) => {
+
+    const router = useRouter()
+
     return (
-        <tr className="cursor-pointer group">
+        <tr className="cursor-pointer group" onClick={ () => { router.push(`/itineraries/${id}`) }}>
             <td className="pb-3">
                 <div className="px-6 py-4 border border-r-0 rounded-l-lg group-hover:bg-[#00FF85]/[.2]">
                     {id}

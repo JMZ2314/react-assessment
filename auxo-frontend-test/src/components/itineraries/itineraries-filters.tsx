@@ -22,6 +22,7 @@ const ItinerariesFilters = () => {
             params.delete("find")
 
         replace(`${path}?${params.toString()}`)
+        
     },300)
 
     return (
@@ -30,7 +31,7 @@ const ItinerariesFilters = () => {
                 <TextInput placeholder="Search" defaultValue={searchParams.get("find")?.toString()} handleChange={(e) => handleChange(e.target.value)} icon={<IoSearch size={22} className="text-[#A6A9B3]" />} />
                 <span className="mx-1 text-[#21052D]">Select the itinerary from the list below</span>
             </div>
-            <OrderButton className="lg:ml-5" />
+            <OrderButton className="lg:ml-5 mt-5 lg:mt-0" />
         </div>
     );
 }
